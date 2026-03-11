@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Politique de confidentialité — Vikara</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0a0c;
+      --surface: #12121a;
+      --border: rgba(255,255,255,0.06);
+      --text: #d4ded5;
+      --text-heading: #e8ede8;
+      --text-muted: #6e826f;
+      --accent: #22c55e;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'DM Sans', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+      padding: 48px 24px 80px;
+    }
+    .container { max-width: 720px; margin: 0 auto; }
+    .back { display: inline-block; color: var(--text-muted); text-decoration: none; font-size: 0.85rem; margin-bottom: 32px; }
+    .back:hover { color: var(--text); }
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2.2rem;
+      color: var(--text-heading);
+      margin-bottom: 8px;
+      letter-spacing: -0.01em;
+    }
+    .updated { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 40px; }
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--text-heading);
+      margin-top: 40px;
+      margin-bottom: 12px;
+    }
+    p, li { font-size: 0.95rem; margin-bottom: 12px; }
+    ul { padding-left: 24px; margin-bottom: 16px; }
+    li { margin-bottom: 6px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .highlight {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 16px 0;
+      font-size: 0.9rem;
+    }
+    footer { margin-top: 64px; text-align: center; font-size: 0.8rem; color: var(--text-muted); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="/" class="back">← Retour à l'accueil</a>
+    <h1>Politique de confidentialité</h1>
+    <p class="updated">Dernière mise à jour : 11 mars 2026</p>
+
+    <p>Vikara (ci-après « l'Application ») est éditée par Vikara SASU. La protection de vos données personnelles est une priorité. Cette politique explique quelles données nous collectons, pourquoi, et comment nous les protégeons.</p>
+
+    <h2>1. Responsable du traitement</h2>
+    <p>Le responsable du traitement est Vikara SASU, joignable à l'adresse <a href="/cdn-cgi/l/email-protection#b4d7dbdac0d5d7c0f4d3d1c0c2dddfd5c6d59ad5c4c4"><span class="__cf_email__" data-cfemail="86e5e9e8f2e7e5f2c6e1e3f2f0efede7f4e7a8e7f6f6">[email&#160;protected]</span></a>.</p>
+
+    <h2>2. Données collectées</h2>
+    <p>Nous collectons les données suivantes :</p>
+    <ul>
+      <li><strong>Données de compte</strong> : adresse email, mot de passe (chiffré), date d'inscription.</li>
+      <li><strong>Documents importés</strong> : les fichiers que vous uploadez dans votre coffre-fort (factures, contrats, baux, etc.). Ces documents sont stockés de manière sécurisée et ne sont accessibles que par vous.</li>
+      <li><strong>Données extraites par l'IA</strong> : type de document, montants, dates, noms de tiers, score de risque. Ces données sont extraites automatiquement pour vous fournir l'analyse.</li>
+      <li><strong>Données postales</strong> : adresse de l'expéditeur et du destinataire, pour l'envoi de courriers recommandés.</li>
+      <li><strong>Données de paiement</strong> : gérées exclusivement par Stripe, Apple ou Google. Nous ne stockons jamais vos numéros de carte bancaire.</li>
+      <li><strong>Données techniques</strong> : type d'appareil, système d'exploitation, token de notification push (anonymisé).</li>
+    </ul>
+
+    <h2>3. Finalités du traitement</h2>
+    <ul>
+      <li>Fournir le service d'analyse documentaire et d'assistance au quotidien.</li>
+      <li>Envoyer des courriers recommandés en votre nom.</li>
+      <li>Vous alerter sur les risques détectés dans vos documents (notifications).</li>
+      <li>Améliorer le service via des statistiques anonymes (uniquement si vous y consentez).</li>
+      <li>Gérer votre abonnement et votre facturation.</li>
+    </ul>
+
+    <h2>4. Base légale</h2>
+    <p>Le traitement de vos données repose sur :</p>
+    <ul>
+      <li><strong>L'exécution du contrat</strong> (article 6.1.b du RGPD) pour les fonctionnalités principales de l'Application.</li>
+      <li><strong>Votre consentement</strong> (article 6.1.a) pour les statistiques anonymes (Firebase Analytics).</li>
+      <li><strong>L'intérêt légitime</strong> (article 6.1.f) pour la sécurité et la prévention de la fraude.</li>
+    </ul>
+
+    <h2>5. Sous-traitants et services tiers</h2>
+    <p>Vos données peuvent être transmises aux sous-traitants suivants, dans le cadre strict de la fourniture du service :</p>
+
+    <div class="highlight">
+      <strong>Supabase</strong> (hébergement et base de données) — Données stockées dans l'Union Européenne.<br>
+      <strong>Anthropic / Claude</strong> (analyse IA) — Le contenu de vos documents est envoyé de manière sécurisée pour analyse. Anthropic ne conserve pas vos données au-delà du traitement.<br>
+      <strong>Merci Facteur</strong> (envoi postal) — Adresses et contenu des courriers, pour l'impression et l'envoi physique.<br>
+      <strong>Stripe</strong> (paiement) — Données de transaction uniquement. Conforme PCI DSS.<br>
+      <strong>Apple / Google</strong> (achats in-app) — Gestion des abonnements via les stores.<br>
+      <strong>INSEE / API SIRENE</strong> (vérification d'entreprise) — Numéro SIRET uniquement, données publiques.<br>
+      <strong>Firebase / Google</strong> (notifications et statistiques) — Token de notification (anonymisé). Statistiques anonymes uniquement avec votre consentement.
+    </div>
+
+    <h2>6. Durée de conservation</h2>
+    <ul>
+      <li><strong>Données de compte</strong> : conservées tant que votre compte est actif. Supprimées dans les 30 jours suivant la suppression de votre compte.</li>
+      <li><strong>Documents importés</strong> : conservés tant que vous ne les supprimez pas. Supprimés automatiquement à la suppression du compte.</li>
+      <li><strong>Données de paiement</strong> : conservées par Stripe conformément à leurs obligations légales (jusqu'à 7 ans pour les obligations comptables).</li>
+      <li><strong>Statistiques anonymes</strong> : 14 mois (politique Google Analytics).</li>
+    </ul>
+
+    <h2>7. Vos droits</h2>
+    <p>Conformément au RGPD, vous disposez des droits suivants :</p>
+    <ul>
+      <li><strong>Droit d'accès</strong> : obtenir une copie de vos données personnelles.</li>
+      <li><strong>Droit de rectification</strong> : corriger vos données inexactes.</li>
+      <li><strong>Droit à l'effacement</strong> : supprimer votre compte et toutes vos données (accessible dans l'Application → Paramètres → Supprimer mon compte).</li>
+      <li><strong>Droit à la portabilité</strong> : recevoir vos données dans un format structuré.</li>
+      <li><strong>Droit d'opposition</strong> : vous opposer au traitement de vos données pour des motifs légitimes.</li>
+      <li><strong>Droit de retrait du consentement</strong> : retirer votre consentement aux statistiques anonymes à tout moment (Paramètres → Statistiques anonymes).</li>
+    </ul>
+    <p>Pour exercer vos droits, contactez-nous à <a href="/cdn-cgi/l/email-protection#adcec2c3d9ccced9edcac8d9dbc4c6ccdfcc83ccdddd"><span class="__cf_email__" data-cfemail="86e5e9e8f2e7e5f2c6e1e3f2f0efede7f4e7a8e7f6f6">[email&#160;protected]</span></a>.</p>
+    <p>Vous avez également le droit d'introduire une réclamation auprès de la CNIL (<a href="https://www.cnil.fr" target="_blank">www.cnil.fr</a>).</p>
+
+    <h2>8. Sécurité</h2>
+    <p>Nous mettons en œuvre les mesures techniques et organisationnelles suivantes :</p>
+    <ul>
+      <li>Chiffrement des données en transit (TLS 1.3) et au repos.</li>
+      <li>Isolation des données par utilisateur (Row Level Security).</li>
+      <li>Authentification par token JWT signés.</li>
+      <li>Aucun stockage de mot de passe en clair (hachage bcrypt).</li>
+      <li>Suppression automatique de toutes les données à la suppression du compte.</li>
+      <li>Accès aux données strictement limité aux services nécessaires.</li>
+    </ul>
+
+    <h2>9. Cookies et traceurs</h2>
+    <p>L'Application mobile n'utilise pas de cookies. La version web n'utilise que des cookies strictement nécessaires au fonctionnement. Les statistiques anonymes (Firebase Analytics) ne sont activées qu'avec votre consentement explicite.</p>
+
+    <h2>10. Transferts internationaux</h2>
+    <p>Vos documents et données de compte sont hébergés dans l'Union Européenne (Supabase, région EU). Certains sous-traitants (Anthropic, Stripe, Firebase) peuvent traiter des données aux États-Unis, dans le cadre de clauses contractuelles types (CCT) approuvées par la Commission Européenne, ou du EU-US Data Privacy Framework.</p>
+
+    <h2>11. Modifications</h2>
+    <p>Nous pouvons modifier cette politique de confidentialité. En cas de modification substantielle, vous serez informé(e) via l'Application. La date de dernière mise à jour est indiquée en haut de cette page.</p>
+
+    <h2>12. Contac

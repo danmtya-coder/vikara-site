@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vikara — Réglez vos problèmes, simplement</title>
+  <meta name="description" content="Vikara vous aide à régler vos soucis du quotidien : factures abusives, contrats compliqués, résiliations. Notre IA s'occupe de tout.">
+  <meta property="og:title" content="Vikara — Réglez vos problèmes, simplement">
+  <meta property="og:description" content="L'assistant intelligent qui vous fait gagner du temps sur vos démarches du quotidien.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://getvikara.app">
+  <link rel="canonical" href="https://getvikara.app">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #050a06;
+      --surface: #0a120c;
+      --surface-2: #0f1a12;
+      --border: rgba(255,255,255,0.06);
+      --border-hover: rgba(255,255,255,0.12);
+      --text: #e2eae4;
+      --text-muted: #6e826f;
+      --text-heading: #f0f5f0;
+      --accent: #22c55e;
+      --accent-2: #16a34a;
+      --accent-soft: rgba(34,197,94,0.10);
+      --accent-glow: rgba(34,197,94,0.08);
+      --gradient: linear-gradient(135deg, #16a34a 0%, #22c55e 40%, #4ade80 100%);
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:'DM Sans',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;overflow-x:hidden}
+    a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+    .container{max-width:1080px;margin:0 auto;padding:0 24px}
+
+    /* NAV */
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(5,10,6,0.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+    nav .container{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .nav-logo{font-family:'DM Serif Display',serif;font-size:1.4rem;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    .nav-links{display:flex;gap:32px;align-items:center}
+    .nav-links a{color:var(--text-muted);font-size:.9rem;font-weight:500;text-decoration:none;transition:color .2s}
+    .nav-links a:hover{color:var(--text);text-decoration:none}
+    .nav-cta{background:var(--accent)!important;color:#050a06!important;padding:8px 20px;border-radius:8px;font-weight:600}
+    .nav-cta:hover{opacity:.9}
+    @media(max-width:700px){.nav-links{gap:16px}.nav-links a:not(.nav-cta){display:none}}
+
+    /* HERO */
+    .hero{padding:160px 0 100px;text-align:center;position:relative}
+    .hero::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:900px;height:700px;background:radial-gradient(ellipse,rgba(34,197,94,0.06) 0%,rgba(22,163,74,0.03) 40%,transparent 70%);pointer-events:none}
+    .hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--border);padding:6px 16px;border-radius:100px;font-size:.82rem;color:var(--text-muted);margin-bottom:28px}
+    .hero-badge span{color:var(--accent)}
+    .hero h1{font-family:'DM Serif Display',serif;font-size:clamp(2.4rem,5.5vw,4rem);line-height:1.15;color:var(--text-heading);margin-bottom:20px;letter-spacing:-.02em;position:relative}
+    .hero h1 em{font-style:normal;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    .hero p{font-size:1.15rem;color:var(--text-muted);max-width:580px;margin:0 auto 40px;line-height:1.7}
+    .hero-cta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:12px;font-size:.95rem;font-weight:600;text-decoration:none;transition:all .2s}
+    .btn-primary{background:var(--gradient);color:#050a06}
+    .btn-primary:hover{opacity:.9;transform:translateY(-1px);text-decoration:none}
+    .btn-outline{background:transparent;color:var(--text);border:1px solid var(--border)}
+    .btn-outline:hover{border-color:var(--border-hover);text-decoration:none}
+
+    /* USECASES */
+    .usecases{padding:80px 0 40px}
+    .usecases-label{text-align:center;font-size:.8rem;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:32px}
+    .usecases-grid{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+    .usecase-tag{background:var(--surface);border:1px solid var(--border);padding:10px 20px;border-radius:100px;font-size:.88rem;color:var(--text);font-weight:500;white-space:nowrap}
+    .usecase-tag span{margin-right:6px}
+
+    /* SECTIONS */
+    section{padding:100px 0}
+    .section-label{font-size:.8rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;margin-bottom:12px}
+    .section-title{font-family:'DM Serif Display',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);color:var(--text-heading);margin-bottom:16px;letter-spacing:-.01em}
+    .section-desc{font-size:1.05rem;color:var(--text-muted);max-width:600px;line-height:1.7}
+    .section-header{text-align:center;margin-bottom:64px}
+    .section-header .section-desc{margin:0 auto}
+
+    /* FEATURES */
+    .features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    @media(max-width:800px){.features-grid{grid-template-columns:1fr}}
+    .feature-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:32px 28px;transition:border-color .3s}
+    .feature-card:hover{border-color:var(--border-hover)}
+    .feature-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:20px;background:var(--accent-soft)}
+    .feature-card h3{font-size:1.05rem;font-weight:600;color:var(--text-heading);margin-bottom:8px}
+    .feature-card p{font-size:.9rem;color:var(--text-muted);line-height:1.6}
+
+    /* STEPS */
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;counter-reset:step}
+    @media(max-width:800px){.steps{grid-template-columns:1fr 1fr}}
+    @media(max-width:500px){.steps{grid-template-columns:1fr}}
+    .step{text-align:center;padding:32px 20px}
+    .step::before{counter-increment:step;content:counter(step);display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:var(--accent-soft);color:var(--accent);font-weight:700;font-size:1rem;margin:0 auto 20px}
+    .step h3{font-size:1rem;font-weight:600;color:var(--text-heading);margin-bottom:8px}
+    .step p{font-size:.85rem;color:var(--text-muted);line-height:1.6}
+
+    /* PROBLEMS */
+    .problems-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:800px;margin:0 auto}
+    @media(max-width:600px){.problems-grid{grid-template-columns:1fr}}
+    .problem{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:24px;display:flex;gap:16px;align-items:start}
+    .problem-icon{font-size:1.6rem;flex-shrink:0;margin-top:2px}
+    .problem h3{font-size:.95rem;font-weight:600;color:var(--text-heading);margin-bottom:4px}
+    .problem p{font-size:.85rem;color:var(--text-muted);line-height:1.5}
+
+    /* PRICING */
+    .pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:start}
+    @media(max-width:800px){.pricing-grid{grid-template-columns:1fr;max-width:400px;margin:0 auto}}
+    .pricing-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:32px 28px}
+    .pricing-card.featured{border-color:var(--accent);position:relative}
+    .pricing-card.featured::before{content:'Populaire';position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--gradient);color:#050a06;font-size:.75rem;font-weight:700;padding:4px 16px;border-radius:100px}
+    .pricing-tier{font-size:.85rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px}
+    .pricing-price{font-family:'DM Serif Display',serif;font-size:2.2rem;color:var(--text-heading);margin-bottom:4px}
+    .pricing-price span{font-family:'DM Sans',sans-serif;font-size:.9rem;color:var(--text-muted);font-weight:400}
+    .pricing-desc{font-size:.85rem;color:var(--text-muted);margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid var(--border)}
+    .pricing-features{list-style:none;margin-bottom:28px}
+    .pricing-features li{font-size:.88rem;color:var(--text);padding:6px 0;padding-left:24px;position:relative}
+    .pricing-features li::before{content:'✓';position:absolute;left:0;color:var(--accent);font-weight:700}
+
+    /* FAQ */
+    .faq-list{max-width:700px;margin:0 auto}
+    .faq-item{border-bottom:1px solid var(--border)}
+    .faq-q{padding:20px 0;font-size:1rem;font-weight:600;color:var(--text-heading);cursor:pointer;display:flex;justify-content:space-between;align-items:center}
+    .faq-q::after{content:'+';font-size:1.3rem;color:var(--text-muted);transition:transform .2s}
+    .faq-q.open::after{transform:rotate(45deg)}
+    .faq-a{font-size:.92rem;color:var(--text-muted);line-height:1.7;padding-bottom:20px;display:none}
+    .faq-a.open{display:block}
+
+    /* CTA */
+    .cta-section{text-align:center;padding:100px 0 120px;position:relative}
+    .cta-section::before{content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:800px;height:400px;background:radial-gradient(ellipse,rgba(34,197,94,0.06) 0%,transparent 70%);pointer-events:none}
+    .cta-section h2{font-family:'DM Serif Display',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);color:var(--text-heading);margin-bottom:16px;position:relative}
+    .cta-section p{color:var(--text-muted);font-size:1.1rem;margin-bottom:36px;max-width:500px;margin-left:auto;margin-right:auto;position:relative}
+
+    /* FOOTER */
+    footer{background:var(--surface);border-top:1px solid var(--border);padding:60px 0 40px}
+    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px}
+    @media(max-width:700px){.footer-grid{grid-template-columns:1fr 1fr}}
+    .footer-brand p{font-size:.85rem;color:var(--text-muted);max-width:280px;margin-top:12px}
+    .footer-col h4{font-size:.82rem;font-weight:600;color:var(--text-heading);text-transform:uppercase;letter-spacing:.08em;margin-bottom:16px}
+    .footer-col a{display:block;font-size:.88rem;color:var(--text-muted);text-decoration:none;padding:4px 0;transition:color .2s}
+    .footer-col a:hover{color:var(--text)}
+    .footer-bottom{border-top:1px solid var(--border);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+    .footer-bottom p{font-size:.8rem;color:var(--text-muted)}
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="container">
+      <a href="/" class="nav-logo">Vikara</a>
+      <div class="nav-links">
+        <a href="#features">Fonctionnalités</a>
+        <a href="#pricing">Tarifs</a>
+        <a href="/about/">À propos</a>
+        <a href="/contact/">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-badge"><span>●</span> Bientôt disponible sur iOS et Android</div>
+      <h1>Vos problèmes réglés,<br><em>simplement</em></h1>
+      <p>Facture abusive, résiliation compliquée, arnaque, réclamation sans réponse… Vikara vous aide à tout régler depuis votre téléphone. Notre IA s'occupe du plus dur.</p>
+      <div class="hero-cta">
+        <a href="#features" class="btn btn-primary">Découvrir Vikara</a>
+        <a href="#how" class="btn btn-outline">Comment ça marche</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- USECASES -->
+  <div class="usecases">
+    <div class="container">
+      <div class="usecases-label">Les gens utilisent Vikara pour</div>
+      <div class="usecases-grid">
+        <div class="usecase-tag"><span>📱</span> Résilier un abonnement</div>
+        <div class="usecase-tag"><span>💰</span> Contester une facture</div>
+        <div class="usecase-tag"><span>🏠</span> Récupérer une caution</div>
+        <div class="usecase-tag"><span>✉️</span> Envoyer une mise en demeure</div>
+        <div class="usecase-tag"><span>🛡️</span> Détecter une arnaque</div>
+        <div class="usecase-tag"><span>📄</span> Comprendre un contrat</div>
+        <div class="usecase-tag"><span>⏰</span> Ne pas oublier une échéance</div>
+        <div class="usecase-tag"><span>🔍</span> Vérifier une entreprise</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROBLEMS -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Le problème</div>
+        <h2 class="section-title">Ces galères que tout le monde connaît</h2>
+        <p class="section-desc">Des heures perdues au téléphone, des courriers qu'on ne sait pas rédiger, des droits qu'on ne connaît pas. Vikara change ça.</p>
+      </div>
+      <div class="problems-grid">
+        <div class="problem">
+          <div class="problem-icon">😤</div>
+          <div><h3>Le service client ne répond pas</h3><p>Vous appelez, vous attendez, on vous transfère, on raccroche. Vikara génère le courrier recommandé qui fait bouger les choses.</p></div>
+        </div>
+        <div class="problem">
+          <div class="problem-icon">📑</div>
+          <div><h3>Ce contrat est incompréhensible</h3><p>30 pages de jargon. Vikara lit et résume pour vous, et vous dit si quelque chose cloche.</p></div>
+        </div>
+        <div class="problem">
+          <div class="problem-icon">💸</div>
+          <div><h3>On me facture un truc que je n'ai pas commandé</h3><p>Vikara identifie le problème, trouve la marche à suivre, et vous aide à réclamer.</p></div>
+        </div>
+        <div class="problem">
+          <div class="problem-icon">🕐</div>
+          <div><h3>Mon assurance expire et j'ai oublié</h3><p>Vikara suit les dates importantes et vous prévient avant qu'il ne soit trop tard.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Fonctionnalités</div>
+        <h2 class="section-title">Tout ce qu'il faut pour régler vos soucis</h2>
+        <p class="section-desc">Un assistant complet dans votre poche. Importez, comprenez, agissez — en quelques minutes au lieu de quelques jours.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📸</div>
+          <h3>Importez n'importe quel document</h3>
+          <p>Prenez en photo ou importez une facture, un contrat, un courrier reçu. L'IA extrait et organise toutes les informations automatiquement.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🧠</div>
+          <h3>L'IA comprend pour vous</h3>
+          <p>Vikara analyse le contenu, identifie les montants, les dates clés, et vous dit clairement s'il y a un problème — en français, pas en jargon.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🛡️</div>
+          <h3>Détection d'arnaques</h3>
+          <p>Fausse facture, faux huissier, phishing postal ? Vikara repère les signaux d'alerte et vous prévient avant que vous ne tombiez dans le piège.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">✉️</div>
+          <h3>Courrier recommandé en 2 min</h3>
+          <p>L'IA rédige le courrier adapté à votre situation. Vous validez, on l'envoie en recommandé avec accusé de réception. Sans bouger de chez vous.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔔</div>
+          <h3>Rappels et suggestions</h3>
+          <p>Contrat qui expire, facture à contester, relance à envoyer — Vikara vous dit quoi faire et quand, pour ne plus rien oublier.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Tous vos documents au même endroit</h3>
+          <p>Un coffre-fort numérique intelligent qui classe, recherche et retrouve vos documents en une seconde. Fini les tiroirs et les dossiers perdus.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Comment ça marche</div>
+        <h2 class="section-title">De la photo à la solution en 3 minutes</h2>
+        <p class="section-desc">Pas besoin d'être un expert. Vikara vous guide de A à Z.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <h3>Prenez en photo</h3>
+          <p>Photographiez le document qui vous pose problème — facture, courrier, contrat, relevé. C'est tout ce qu'on vous demande.</p>
+        </div>
+        <div class="step">
+          <h3>Vikara analyse</h3>
+          <p>En quelques secondes, l'IA extrait les informations, identifie le type de problème, et vous explique la situation simplement.</p>
+        </div>
+        <div class="step">
+          <h3>Choisissez votre action</h3>
+          <p>Contester, résilier, réclamer, relancer — Vikara vous propose les actions adaptées à votre situation.</p>
+        </div>
+        <div class="step">
+          <h3>On s'occupe du reste</h3>
+          <p>Le courrier est rédigé, envoyé en recommandé, et suivi. Vous recevez une notification quand il est distribué.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Tarifs</div>
+        <h2 class="section-title">Simple, transparent, sans surprise</h2>
+        <p class="section-desc">Commencez gratuitement. Passez à la vitesse supérieure quand vous en avez besoin.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-tier">Découverte</div>
+          <div class="pricing-price">Gratuit</div>
+          <div class="pricing-desc">Pour essayer Vikara et importer vos premiers documents.</div>
+          <ul class="pricing-features">
+            <li>5 documents</li>
+            <li>Classification automatique</li>
+            <li>Recherche dans vos documents</li>
+            <li>Alertes de base</li>
+            <li>Envoi de courrier à l'unité</li>
+          </ul>
+        </div>
+        <div class="pricing-card featured">
+          <div class="pricing-tier">Protection</div>
+          <div class="pricing-price">12,99€ <span>/mois</span></div>
+          <div class="pricing-desc">L'assistant complet pour gérer tous vos soucis du quotidien.</div>
+          <ul class="pricing-features">
+            <li>200 documents</li>
+            <li>Analyse IA approfondie</li>
+            <li>Détection d'arnaques complète</li>
+            <li>Vérification d'entreprises</li>
+            <li>Suggestions d'actions personnalisées</li>
+            <li>Rappels d'échéances intelligents</li>
+            <li>Tarif réduit sur les envois</li>
+          </ul>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-tier">Protection Max</div>
+          <div class="pricing-price">19,99€ <span>/mois</span></div>
+          <div class="pricing-desc">Pour ceux qui gèrent beaucoup de documents ou toute la famille.</div>
+          <ul class="pricing-features">
+            <li>Documents illimités</li>
+            <li>Tout Protection inclus</li>
+            <li>Multi-profil famille</li>
+            <li>Support prioritaire 24h</li>
+            <li>Meilleur tarif sur les envois</li>
+            <li>Export certifié</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Questions fréquentes</div>
+        <h2 class="section-title">Tout ce que vous devez savoir</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">C'est quoi Vikara exactement ?</div>
+          <div class="faq-a">Vikara est une application qui vous aide à régler les problèmes du quotidien : factures abusives, contrats incompréhensibles, résiliations, réclamations, arnaques. Vous importez un document, l'IA l'analyse et vous propose des actions concrètes — jusqu'à l'envoi d'un courrier recommandé.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">Mes documents sont-ils en sécurité ?</div>
+          <div class="faq-a">Absolument. Vos documents sont chiffrés et isolés — personne d'autre que vous n'y a accès, pas même nous. Tout est supprimé définitivement si vous supprimez votre compte.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">Comment fonctionne l'envoi de courrier ?</div>
+          <div class="faq-a">Vikara génère le courrier adapté à votre situation. Vous le relisez, vous le validez, puis on l'imprime et on l'envoie en recommandé avec accusé de réception via un prestataire postal. Vous suivez l'acheminement dans l'app et recevez une notification quand il est distribué.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">Combien coûte l'envoi d'un courrier ?</div>
+          <div class="faq-a">Les envois sont facturés à l'unité. Lettre simple : 3,99€. Recommandé : 8,99€. Recommandé AR : 12,99€. Les abonnés Protection bénéficient de tarifs réduits sur chaque envoi.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">Vikara remplace-t-il un professionnel ?</div>
+          <div class="faq-a">Vikara est un outil d'aide et d'information. Pour les situations simples du quotidien (résiliation, réclamation, contestation), il fait le travail. Pour les situations complexes qui nécessitent un accompagnement personnalisé, nous vous recommandons de consulter un professionnel.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">Puis-je annuler mon abonnement ?</div>
+          <div class="faq-a">Oui, à tout moment depuis les paramètres de votre store (App Store ou Google Play). Vos documents restent accessibles après l'annulation.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Prêt à simplifier votre quotidien ?</h2>
+      <p>Vikara sera disponible très prochainement sur l'App Store et Google Play.</p>
+      <a href="/contact/" class="btn btn-primary" style="position:relative">Nous contacter</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="nav-logo">Vikara</span>
+          <p>L'assistant intelligent qui vous aide à régler vos problèmes du quotidien. Importez, comprenez, agissez.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Produit</h4>
+          <a href="#features">Fonctionnalités</a>
+          <a href="#pricing">Tarifs</a>
+          <a href="#how">Comment ça marche</a>
+        </div>
+        <div class="footer-col">
+          <h4>Entreprise</h4>
+          <a href="/about/">À propos</a>
+          <a href="/contact/">Contact</a>
+          <a href="/mentions-legales/">Mentions légales</a>
+        </div>
+        <div class="footer-col">
+          <h4>Légal</h4>
+          <a href="/privacy/">Politique de confidentialité</a>
+          <a href="/cgu/">Conditions d'utilisation</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025-2026 Vikara SASU — RCS Rouen 999 855 349. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
