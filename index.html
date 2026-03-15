@@ -103,7 +103,8 @@
 
     /* PRICING */
     .pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:start}
-    @media(max-width:800px){.pricing-grid{grid-template-columns:1fr;max-width:400px;margin:0 auto}}
+    @media(max-width:900px){.pricing-grid{grid-template-columns:1fr 1fr!important}}
+    @media(max-width:550px){.pricing-grid{grid-template-columns:1fr!important;max-width:400px;margin:0 auto}}
     .pricing-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:32px 28px}
     .pricing-card.featured{border-color:var(--accent);position:relative}
     .pricing-card.featured::before{content:'Populaire';position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--gradient);color:#050a06;font-size:.75rem;font-weight:700;padding:4px 16px;border-radius:100px}
@@ -295,7 +296,7 @@
         <h2 class="section-title">Simple, transparent, sans surprise</h2>
         <p class="section-desc">Commencez gratuitement. Passez à la vitesse supérieure quand vous en avez besoin.</p>
       </div>
-      <div class="pricing-grid">
+      <div class="pricing-grid" style="grid-template-columns:repeat(4,1fr)">
         <div class="pricing-card">
           <div class="pricing-tier">Découverte</div>
           <div class="pricing-price">Gratuit</div>
@@ -308,18 +309,29 @@
             <li>Envoi de courrier à l'unité</li>
           </ul>
         </div>
+        <div class="pricing-card">
+          <div class="pricing-tier">Essentiel</div>
+          <div class="pricing-price">5,99€ <span>/mois</span></div>
+          <div class="pricing-desc">Pour organiser et comprendre tous vos documents.</div>
+          <ul class="pricing-features">
+            <li>50 documents</li>
+            <li>Analyse IA approfondie</li>
+            <li>Rappels d'échéances</li>
+            <li>Contacts et timeline</li>
+            <li>Envoi de courrier à l'unité</li>
+          </ul>
+        </div>
         <div class="pricing-card featured">
           <div class="pricing-tier">Protection</div>
           <div class="pricing-price">12,99€ <span>/mois</span></div>
           <div class="pricing-desc">L'assistant complet pour gérer tous vos soucis du quotidien.</div>
           <ul class="pricing-features">
             <li>200 documents</li>
-            <li>Analyse IA approfondie</li>
+            <li>Tout Essentiel inclus</li>
             <li>Détection d'arnaques complète</li>
             <li>Vérification d'entreprises</li>
-            <li>Suggestions d'actions personnalisées</li>
-            <li>Rappels d'échéances intelligents</li>
-            <li>Tarif réduit sur les envois</li>
+            <li>Suggestions d'actions</li>
+            <li>-20% sur les envois postaux</li>
           </ul>
         </div>
         <div class="pricing-card">
@@ -331,7 +343,7 @@
             <li>Tout Protection inclus</li>
             <li>Multi-profil famille</li>
             <li>Support prioritaire 24h</li>
-            <li>Meilleur tarif sur les envois</li>
+            <li>-30% sur les envois postaux</li>
             <li>Export certifié</li>
           </ul>
         </div>
@@ -361,7 +373,7 @@
         </div>
         <div class="faq-item">
           <div class="faq-q" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">Combien coûte l'envoi d'un courrier ?</div>
-          <div class="faq-a">Les envois sont facturés à l'unité. Lettre simple : 3,99€. Recommandé : 8,99€. Recommandé AR : 12,99€. Les abonnés Protection bénéficient de tarifs réduits sur chaque envoi.</div>
+          <div class="faq-a">Les envois sont facturés à l'unité. Lettre simple : 3,99€. Recommandé : 8,99€. Recommandé AR : 12,99€. Les abonnés Protection bénéficient de -20% sur chaque envoi, et les abonnés Protection Max de -30%.</div>
         </div>
         <div class="faq-item">
           <div class="faq-q" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">Vikara remplace-t-il un professionnel ?</div>
