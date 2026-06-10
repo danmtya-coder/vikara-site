@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- PWA -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Vikara">
+  <meta name="theme-color" content="#1a4a45">
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Icons -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <title>Vikara</title>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: linear-gradient(to bottom, #1a4a45 0%, #123f42 50%, #0d2a28 100%);
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    .loading {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .loading img {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 24px;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    .spinner {
+      width: 36px;
+      height: 36px;
+      border: 3px solid rgba(255,255,255,0.2);
+      border-top-color: #fff;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes pulse { 50% { opacity: 0.6; } }
+  </style>
+</head>
+<body>
+  <div class="loading" id="loading">
+    <img src="icons/Icon-192.png" alt="Vikara">
+    <div class="spinner"></div>
+  </div>
+
+  <script src="flutter_bootstrap.js" async></script>
+  <script>
+    window.addEventListener('load', function() {
+      if (typeof _flutter !== 'undefined') {
+        _flutter.loader.load({
+          onEntrypointLoaded: async function(engineInitializer) {
+            const appRunner = await engineInitializer.initializeEngine();
+            await appRunner.runApp();
+            document.getElementById('loading').style.display = 'none';
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>

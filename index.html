@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- S9-6: Security headers via meta tags -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.gstatic.com; style-src 'self' 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://*.supabase.co https://*.supabase.in; connect-src 'self' https://*.supabase.co https://*.supabase.in wss://*.supabase.co https://api.stripe.com https://api.anthropic.com https://fonts.gstatic.com https://www.gstatic.com; frame-src https://js.stripe.com https://hooks.stripe.com; object-src 'none'; base-uri 'self';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- SEO -->
+  <title>Vikara - Un problème ? On s'en occupe.</title>
+  <meta name="description" content="Vikara vous aide à résoudre vos problèmes du quotidien. Décrivez votre situation, on génère le courrier adapté et on l'envoie pour vous. Analyse gratuite, courrier dès 3,99 € TTC.">
+  <meta name="keywords" content="réclamation, courrier, lettre recommandé, consommateur, remboursement, mise en demeure, droits, dépôt de garantie, colis perdu, facture abusive">
+  <meta name="author" content="Vikara SASU">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://getvikara.app/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Vikara - Un problème ? On s'en occupe.">
+  <meta property="og:description" content="Résolvez vos problèmes du quotidien. Courrier adapté généré et envoyé pour vous.">
+  <meta property="og:image" content="https://getvikara.app/icons/Icon-512.png">
+  <meta property="og:url" content="https://getvikara.app">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Vikara">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vikara - Un problème ? On s'en occupe.">
+  <meta name="twitter:description" content="Résolvez vos problèmes du quotidien. Courrier adapté généré et envoyé pour vous.">
+  <meta name="twitter:image" content="https://getvikara.app/icons/Icon-512.png">
+
+  <!-- PWA -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Vikara">
+  <meta name="theme-color" content="#1a4a45" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#F5FAF7" media="(prefers-color-scheme: light)">
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Icons -->
+  <link rel="icon" type="image/png" href="favicon.png?v=2">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png?v=2">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Vikara",
+    "description": "Assistant courrier et résolution de litiges. Décrivez votre problème, Vikara génère le courrier adapté et l'envoie pour vous.",
+    "url": "https://getvikara.app",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Android, iOS",
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Lettre simple",
+        "price": "3.99",
+        "priceCurrency": "EUR",
+        "description": "Courrier generé par IA avec envoi postal inclus"
+      },
+      {
+        "@type": "Offer",
+        "name": "Recommandé AR",
+        "price": "12.99",
+        "priceCurrency": "EUR",
+        "description": "Courrier recommandé avec accusé de réception"
+      },
+      {
+        "@type": "Offer",
+        "name": "Essentiel",
+        "price": "5.99",
+        "priceCurrency": "EUR",
+        "description": "Abonnement mensuel avec coffre-fort intelligent et analyse IA"
+      }
+    ],
+    "author": {
+      "@type": "Organization",
+      "name": "Vikara SASU",
+      "url": "https://getvikara.app"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Est-ce que mon courrier a une valeur légale ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui. Le recommandé avec accusé de réception (AR) est reconnu comme preuve en France. Il atteste de l'envoi, de la date et de la réception par le destinataire. C'est le moyen recommandé pour toute démarche officielle."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Combien de temps faut-il pour obtenir une réponse ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Votre courrier est analysé et généré en moins d'une minute. L'envoi postal est effectué sous 24 à 48h ouvrées. Le destinataire a ensuite généralement 1 à 2 mois pour répondre selon la situation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Vikara remplace-t-il un avocat ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Non. Vikara est un assistant qui vous aide à rédiger des courriers clairs et professionnels. Pour les situations nécessitant un accompagnement personnalisé, nous vous orientons vers un professionnel."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Comment sont protégées mes données ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vos données sont hébergées en Europe et chiffrées. Conformité RGPD complète : vous pouvez exporter ou supprimer toutes vos données à tout moment. Aucune donnée n'est partagée avec des tiers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Que se passe-t-il si ça ne marche pas ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "L'analyse de votre situation est toujours gratuite. Vous ne payez que si vous décidez d'envoyer un courrier. Si la situation ne se résout pas, Vikara vous aide à rédiger des relances adaptées ou vous oriente vers un médiateur."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    /* Default: dark theme */
+    body {
+      background: linear-gradient(to bottom, #1a4a45 0%, #123f42 50%, #0d2a28 100%);
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    .loading {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .loading img {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 24px;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    .spinner {
+      width: 36px;
+      height: 36px;
+      border: 3px solid rgba(255,255,255,0.2);
+      border-top-color: #fff;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes pulse { 50% { opacity: 0.6; } }
+
+    /* Prevent flash when Flutter engine takes over */
+    flutter-view, flt-glass-pane {
+      background: #0d2a28 !important;
+    }
+
+    /* Light theme for users with light OS preference */
+    @media (prefers-color-scheme: light) {
+      body {
+        background: #F5FAF7;
+      }
+      .spinner {
+        border-color: rgba(0,0,0,0.15);
+        border-top-color: #2D9B83;
+      }
+      flutter-view, flt-glass-pane {
+        background: #F5FAF7 !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="loading" id="loading">
+    <img src="icons/Icon-loading.png" alt="Vikara">
+    <div class="spinner"></div>
+  </div>
+
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>

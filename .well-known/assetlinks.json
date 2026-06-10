@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.vikara.app",
+      "sha256_cert_fingerprints": [
+        "72:15:3F:E5:5D:69:98:7B:49:C9:B7:50:87:DB:24:C9:46:67:79:C1:4F:7F:D7:85:86:2F:3A:6D:BB:B2:EB:CF"
+      ]
+    }
+  }
+]

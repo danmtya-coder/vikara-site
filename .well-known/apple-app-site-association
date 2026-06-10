@@ -1,0 +1,17 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "REPLACE_WITH_APPLE_TEAM_ID.com.vikara.app",
+        "paths": [
+          "/case/*",
+          "/payment/*",
+          "/subscription/*",
+          "/auth/*",
+          "/share/*"
+        ]
+      }
+    ]
+  }
+}
