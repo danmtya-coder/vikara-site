@@ -150951,7 +150951,7 @@ A.bC5.prototype={
 $1(a){return B.v.Z(a,1)+"%"},
 $S:121}
 A.bCX.prototype={
-$1(a){var s=this,r=null,q=A.f(16),p=t.p,o=A.v(A.a([A.A(B.Me,B.bq,r,r),B.a_,B.alQ],p),B.k,B.f,B.h,0,r,r),n=s.a
+$1(a){var s=this,r=null,q=A.f(16),p=t.p,o=A.v(A.a([A.A(B.Me,B.bq,r,r),B.a_,B.alP],p),B.k,B.f,B.h,0,r,r),n=s.a
 n=A.cC(A.x(A.a([n.RC(s.b,"MRR cible (E)",B.fb),B.cc,n.RC(s.c,"Utilisateurs cible",B.fb),B.cc,n.RC(s.d,"Conversion cible (%)",B.FV),B.cc,n.RC(s.e,"Retention J7 cible (%)",B.FV)],p),B.k,r,B.f,B.P,0,B.x),r,B.M,r,r,r,r,B.ar)
 return A.cy(A.a([A.bd(!1,A.c("Annuler",r,r,r,r,r,A.e(r,r,B.e.j(0.5),r,r,r,r,r,r,r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r),r,r,r),r,r,r,r,r,r,new A.bCV(a),r,r),A.by(!1,B.bX0,r,r,r,r,r,r,new A.bCW(a),r,A.aZ(r,r,B.bq,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r))],p),B.c3,n,r,r,new A.a6(q,B.B),o)},
 $S:4}
@@ -163368,7 +163368,7 @@ aRU(){return A.lI(new A.bpA(this))},
 aRS(){return A.lI(new A.bpw(this))},
 aVv(){var s=this,r=null,q=A.aM(r,A.q(r,B.Ne,B.l,r,r,new A.r(B.e.j(0.1),r,r,A.f(10),r,r,B.w),r,r,r,r,B.bF,r,r,r),B.M,!1,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,new A.bpm(s),r,r,r,r,r,r),p=s.d
 p===$&&A.b()
-return A.q(r,A.v(A.a([q,B.dv,B.alS,new A.cx(p.ch,new A.bpn(s),r,r,t.E5),B.T,A.aM(r,A.q(r,B.atO,B.l,r,r,new A.r(B.e.j(0.1),r,r,A.f(10),r,r,B.w),r,r,r,r,B.bF,r,r,r),B.M,!1,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,new A.bpo(s),r,r,r,r,r,r),B.T,A.aM(r,A.q(r,B.atN,B.l,r,r,new A.r(B.e.j(0.1),r,r,A.f(10),r,r,B.w),r,r,r,r,B.bF,r,r,r),B.M,!1,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,new A.bpp(s),r,r,r,r,r,r),B.T,A.E6(B.h3,B.asn,new A.bpq(),new A.bpr(s),new A.a6(A.f(12),B.B),t.N)],t.p),B.k,B.f,B.h,0,r,r),B.l,r,r,r,r,r,r,r,B.akB,r,r,r)},
+return A.q(r,A.v(A.a([q,B.dv,B.alR,new A.cx(p.ch,new A.bpn(s),r,r,t.E5),B.T,A.aM(r,A.q(r,B.atO,B.l,r,r,new A.r(B.e.j(0.1),r,r,A.f(10),r,r,B.w),r,r,r,r,B.bF,r,r,r),B.M,!1,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,new A.bpo(s),r,r,r,r,r,r),B.T,A.aM(r,A.q(r,B.atN,B.l,r,r,new A.r(B.e.j(0.1),r,r,A.f(10),r,r,B.w),r,r,r,r,B.bF,r,r,r),B.M,!1,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,new A.bpp(s),r,r,r,r,r,r),B.T,A.E6(B.h3,B.asn,new A.bpq(),new A.bpr(s),new A.a6(A.f(12),B.B),t.N)],t.p),B.k,B.f,B.h,0,r,r),B.l,r,r,r,r,r,r,r,B.akB,r,r,r)},
 ahC(a,b,c){var s=null,r=c.j(0.2),q=A.f(12)
 return A.x(A.a([A.q(s,A.c(""+a,s,s,s,s,s,A.e(s,s,c,s,s,s,s,s,s,s,s,14,s,s,B.H,s,s,!0,s,s,s,s,s,s,s,s),s,s,s),B.l,s,s,new A.r(r,s,s,q,s,s,B.w),s,s,s,s,B.fO,s,s,s),B.bt,A.c(b,s,s,s,s,s,A.e(s,s,B.e.j(0.5),s,s,s,s,s,s,s,s,9,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s,s)],t.p),B.k,s,B.f,B.P,0,B.x)},
 aSE(){var s=null,r=B.e.j(0.05),q=A.f(14),p=this.d
@@ -166040,7 +166040,7 @@ s.x=s.w=s.y=s.e=null
 s.z=!1},
 $S:0}
 A.bwL.prototype={
-$1(a){var s=null,r=A.f(20),q=t.p,p=A.v(A.a([A.q(s,B.au0,B.l,s,s,new A.r(B.af.j(0.2),s,s,s,s,s,B.at),s,40,s,s,s,s,s,40),B.a_,B.alO],q),B.k,B.f,B.h,0,s,s),o=this.a,n=o.x
+$1(a){var s=null,r=A.f(20),q=t.p,p=A.v(A.a([A.q(s,B.au0,B.l,s,s,new A.r(B.af.j(0.2),s,s,s,s,s,B.at),s,40,s,s,s,s,s,40),B.a_,B.alN],q),B.k,B.f,B.h,0,s,s),o=this.a,n=o.x
 o=n>0?""+n+"/"+o.d+" posts ont d\xe9j\xe0 \xe9t\xe9 g\xe9n\xe9r\xe9s. Ils seront perdus.":"Ce plan a \xe9t\xe9 valid\xe9 et est pr\xeat pour la g\xe9n\xe9ration."
 o=A.x(A.a([A.c(o,s,s,s,s,s,A.e(s,s,B.e.j(0.7),s,s,s,s,s,s,s,s,14,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s,s),B.Q,A.c("Cette action est irr\xe9versible.",s,s,s,s,s,A.e(s,s,B.af.j(0.8),s,s,s,s,s,s,s,s,13,s,s,B.a5,s,s,!0,s,s,s,s,s,s,s,s),s,s,s)],q),B.F,s,B.f,B.P,0,B.x)
 return A.cy(A.a([A.bd(!1,A.c("Annuler",s,s,s,s,s,A.e(s,s,B.e.j(0.7),s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s,s),s,s,s,s,s,s,new A.bwJ(a),s,s),A.by(!1,B.bRy,s,s,s,s,s,s,new A.bwK(a),s,A.aZ(s,s,B.hL,s,s,s,s,s,s,B.e,s,s,s,s,new A.a6(A.f(10),B.B),s,s,s,s,s))],q),B.h3,o,s,s,new A.a6(r,B.B),p)},
@@ -166340,7 +166340,7 @@ $S:0}
 A.aYy.prototype={
 $1(a){var s=this,r=null,q=A.aE(a,r,t.w).w,p=t.p,o=A.v(A.a([B.bRp,A.aM(r,B.Cz,B.M,!1,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,new A.aYw(a),r,r,r,r,r,r)],p),B.k,B.cw,B.h,0,r,r),n=s.b,m=s.c,l=A.v(A.a([A.L(new A.wD("Impressions",n,B.kd,r),1),B.a_,A.L(new A.wD("Likes",m,B.pS,r),1)],p),B.k,B.f,B.h,0,r,r),k=s.d,j=s.e,i=A.v(A.a([A.L(new A.wD("Commentaires",k,B.aod,r),1),B.a_,A.L(new A.wD("Partages",j,B.jo,r),1)],p),B.k,B.f,B.h,0,r,r),h=s.f,g=A.a([A.L(new A.wD("Saves",h,B.ao5,r),1),B.a_],p)
 if(s.r)g.push(A.L(new A.wD("Completion %",s.w,B.iH,r),1))
-else g.push(B.alL)
+else g.push(B.alK)
 return new A.Z(new A.ad(20,20,20,q.f.d+20),A.cC(A.x(A.a([o,B.ae,l,B.Q,i,B.Q,A.v(g,B.k,B.f,B.h,0,r,r),B.ab,A.ar(A.by(!1,B.bRq,r,r,r,r,r,r,new A.aYx(s.a,s.x,n,m,k,j,h,s.w,a),r,A.aZ(r,r,B.u,r,r,r,r,r,r,B.e,r,r,B.e7,r,new A.a6(A.f(12),B.B),r,r,r,r,r)),r,1/0)],p),B.F,r,B.f,B.P,0,B.x),r,B.M,r,r,r,r,B.ar),r)},
 $S:122}
 A.aYw.prototype={
@@ -171440,7 +171440,7 @@ r=A.a([r,B.u.j(g?0.05:0.02)],t.O)
 q=A.f(14)
 p=A.a3(B.u.j(0.3),1)
 o=A.A(B.apP,B.u,j,20)
-s.push(A.q(j,A.x(A.a([A.v(A.a([o,B.T,A.c("Pourquoi c'est rentable ?",j,j,j,j,j,A.e(j,j,$.j?B.E:B.C,j,j,j,j,j,j,j,j,15,j,j,B.H,j,j,!0,j,j,j,j,j,j,j,j),j,j,j)],f),B.k,B.f,B.h,0,j,j),B.Q,k.aRD("Courrier recommand\xe9 \xe0 La Poste","8-15 \u20ac",g),k.ahO("Vikara Protection + AR","12,99 \u20ac + 12,99 \u20ac",g,!0),B.a0,A.c("R\xe9solvez vos litiges en quelques minutes, sans quitter votre canap\xe9.",j,j,j,j,j,A.e(j,j,B.u,j,j,j,j,j,j,j,j,12,j,j,B.a5,j,j,!0,j,j,j,j,j,j,j,j),j,j,j)],f),B.F,j,B.f,B.h,0,B.x),B.l,j,j,new A.r(j,j,p,q,j,new A.c4(B.cn,B.ce,B.aG,r,j,j),B.w),j,j,j,j,B.a6,j,j,j))
+s.push(A.q(j,A.x(A.a([A.v(A.a([o,B.T,A.c("Pourquoi c'est rentable ?",j,j,j,j,j,A.e(j,j,$.j?B.E:B.C,j,j,j,j,j,j,j,j,15,j,j,B.H,j,j,!0,j,j,j,j,j,j,j,j),j,j,j)],f),B.k,B.f,B.h,0,j,j),B.Q,k.aRD("Courrier recommand\xe9 \xe0 La Poste","8-15 \u20ac",g),k.ahO("Vikara Protection + AR","12,99 \u20ac + 12,99 \u20ac",g,!0),B.a0,A.c("R\xe9solvez vos litiges sans quitter votre canap\xe9.",j,j,j,j,j,A.e(j,j,B.u,j,j,j,j,j,j,j,j,12,j,j,B.a5,j,j,!0,j,j,j,j,j,j,j,j),j,j,j)],f),B.F,j,B.f,B.h,0,B.x),B.l,j,j,new A.r(j,j,p,q,j,new A.c4(B.cn,B.ce,B.aG,r,j,j),B.w),j,j,j,j,B.a6,j,j,j))
 s.push(B.ab)
 r=$.j?B.u.j(0.08):B.E.j(0.5)
 q=A.f(14)
@@ -192138,7 +192138,7 @@ if(o!=null)B.i.v(n,A.a([B.a0,A.c(o,f,f,f,f,f,B.bO1,f,f,f)],m))
 n.push(B.S)
 n.push(g.aPs(c))
 n.push(B.S)
-n.push(A.c("Gratuit \xb7 Sans inscription \xb7 R\xe9sultat en 30 secondes",f,f,f,f,f,A.e(f,f,a?B.e.j(0.5):B.e5,f,f,f,f,f,f,f,f,14,f,f,f,f,f,!0,f,f,f,f,f,f,f,f),B.ad,f,f))
+n.push(A.c("Essai gratuit \xb7 Sans engagement",f,f,f,f,f,A.e(f,f,a?B.e.j(0.5):B.e5,f,f,f,f,f,f,f,f,14,f,f,f,f,f,!0,f,f,f,f,f,f,f,f),B.ad,f,f))
 n.push(B.ae)
 n.push(g.aPM(a))
 n.push(B.bR)
@@ -192518,7 +192518,7 @@ r=A.c("Comment \xe7a marche ?",m,m,m,m,m,A.e(m,m,i?B.e:B.C,m,m,m,m,m,m,m,m,r,m,m
 q=A.c("En 3 \xe9tapes simples",m,m,m,m,m,A.e(m,m,i?B.co:B.z,m,m,m,m,m,m,m,m,16,m,m,m,m,m,!0,m,m,m,m,m,m,m,m),m,m,m)
 p=k||j
 o=t.p
-return A.q(m,A.aJ(new A.eO(B.aaI,A.x(A.a([r,B.Q,q,B.bIp,p?A.v(A.a([B.alK,n.ahj(),B.alY,n.ahj(),B.alU],o),B.F,B.f,B.h,0,m,m):A.x(A.a([B.a8w,n.ai7(),B.a8v,n.ai7(),B.a8x],o),B.k,m,B.f,B.h,0,B.x)],o),B.k,m,B.f,B.h,0,B.x),m),m,m),B.l,s,m,m,m,m,m,m,new A.ad(l,80,l,80),m,m,1/0)},
+return A.q(m,A.aJ(new A.eO(B.aaI,A.x(A.a([r,B.Q,q,B.bIp,p?A.v(A.a([B.alT,n.ahj(),B.alY,n.ahj(),B.alU],o),B.F,B.f,B.h,0,m,m):A.x(A.a([B.a8x,n.ai7(),B.a8v,n.ai7(),B.a8w],o),B.k,m,B.f,B.h,0,B.x)],o),B.k,m,B.f,B.h,0,B.x),m),m,m),B.l,s,m,m,m,m,m,m,new A.ad(l,80,l,80),m,m,1/0)},
 ahj(){var s=null
 return new A.Z(B.akb,A.ar(A.aJ(A.q(s,s,B.l,s,s,new A.r(s,s,s,s,s,new A.c4(B.cn,B.ce,B.aG,A.a([B.aH.j(0.6),B.aH.j(0.15)],t.O),s,s),B.w),s,2,s,s,s,s,s,28),s,s),s,40),s)},
 ai7(){var s=null
@@ -194419,7 +194419,7 @@ B.i.v(q,r.ge6(r).cg(0,new A.b_z(p,n,m),t.l))
 return A.x(q,B.F,o,B.f,B.h,0,B.x)}return p.aTg(n)},
 aTg(a){var s=null,r=$.j,q=r?B.aC:B.e,p=A.f(16),o=A.a3(r?B.ak:B.ac,1),n=A.A(B.i2,B.u.j(0.7),s,40)
 r=A.c("Bienvenue sur Vikara",s,s,s,s,s,A.e(s,s,$.j?B.E:B.C,s,s,s,s,s,s,s,s,18,s,s,B.H,s,s,!0,s,s,s,s,s,s,s,s),s,s,s)
-return A.q(s,A.x(A.a([n,B.Q,r,B.a0,A.c("Votre assistant courrier intelligent. Analysez votre situation et obtenez un courrier personnalis\xe9 en quelques minutes.",s,s,s,s,s,A.e(s,s,$.j?B.A:B.z,s,s,s,s,s,s,s,s,14,s,s,s,s,1.4,!0,s,s,s,s,s,s,s,s),B.ad,s,s),B.S,A.ar(A.by(!1,B.bWT,s,s,s,s,s,s,new A.b_r(this),s,A.aZ(s,s,B.u,s,s,s,s,s,s,B.e,s,s,B.bE,s,new A.a6(A.f(12),B.B),s,s,s,s,s)),s,1/0)],t.p),B.k,s,B.f,B.h,0,B.x),B.l,s,s,new A.r(q,s,o,p,s,s,B.w),s,s,s,s,B.al,s,s,s)},
+return A.q(s,A.x(A.a([n,B.Q,r,B.a0,A.c("Votre assistant courrier intelligent. Analysez votre situation et obtenez un courrier personnalis\xe9.",s,s,s,s,s,A.e(s,s,$.j?B.A:B.z,s,s,s,s,s,s,s,s,14,s,s,s,s,1.4,!0,s,s,s,s,s,s,s,s),B.ad,s,s),B.S,A.ar(A.by(!1,B.bWT,s,s,s,s,s,s,new A.b_r(this),s,A.aZ(s,s,B.u,s,s,s,s,s,s,B.e,s,s,B.bE,s,new A.a6(A.f(12),B.B),s,s,s,s,s)),s,1/0)],t.p),B.k,s,B.f,B.h,0,B.x),B.l,s,s,new A.r(q,s,o,p,s,s,B.w),s,s,s,s,B.al,s,s,s)},
 bev(a){var s=null,r=a?B.agJ:B.afl,q=A.f(16),p=A.a3(a?B.Am:B.IK,1),o=A.A(B.MS,a?B.hj:B.cM,s,36),n=A.c("Impossible de charger vos donn\xe9es",s,s,s,s,s,A.e(s,s,$.j?B.E:B.C,s,s,s,s,s,s,s,s,16,s,s,B.L,s,s,!0,s,s,s,s,s,s,s,s),s,s,s)
 return A.q(s,A.x(A.a([o,B.Q,n,B.bK,A.c("V\xe9rifiez votre connexion internet et r\xe9essayez.",s,s,s,s,s,A.e(s,s,$.j?B.A:B.z,s,s,s,s,s,s,s,s,13,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),B.ad,s,s),B.dJ,A.l8(B.qi,B.ox,new A.b_o(this),A.fJ(s,s,s,s,s,s,s,s,s,B.u,s,s,s,s,s,s,s,s,s,s,s))],t.p),B.k,s,B.f,B.h,0,B.x),B.l,s,s,new A.r(r,s,p,q,s,s,B.w),s,s,s,s,B.al,s,s,s)},
 aRF(a,a0,a1){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=this,e=null,d=J.W(a),c=A.K(d.h(a,"id")),b=A.K(d.h(a,"category"))
@@ -195783,7 +195783,7 @@ p=m.a
 s.push(p.a6Q("Gratuit pour tous",B.ef,B.R,j))
 s.push(B.Q)
 s.push(p.a2G("L'IA trouve la solution","D\xe9crivez votre probl\xe8me, l'IA vous guide",j))
-s.push(p.a2G("Courrier en 2 minutes","Un courrier pr\xeat \xe0 envoyer",j))
+s.push(p.a2G("Courrier pr\xeat \xe0 envoyer","Clair, personnalis\xe9, pr\xeat \xe0 poster",j))
 s.push(p.a2G("Coffre-fort 5 docs","Vos documents en s\xe9curit\xe9",j))
 s.push(B.fX)
 s.push(p.a6Q("Envois \xe0 l'unit\xe9",B.v_,B.u,j))
@@ -212319,25 +212319,25 @@ B.Bw=new A.C0(!1,!1,!1,!0)
 B.KQ=new A.C1(!1,!1,!1,!1)
 B.KR=new A.C1(!1,!1,!1,!0)
 B.cq=new A.abW(0,"tight")
-B.qe=new A.Q(984310,"MaterialIcons",!1)
-B.a8w=new A.OI("1","D\xe9crivez votre situation","En 2 minutes, expliquez votre probl\xe8me avec vos propres mots.",null)
-B.alK=new A.dX(1,B.cq,B.a8w,null)
-B.alL=new A.dX(1,B.cq,B.jB,null)
+B.alK=new A.dX(1,B.cq,B.jB,null)
 B.H=new A.ok(6,700)
 B.e1=new A.N(!0,B.e,null,null,null,null,18,B.H,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.bVl=new A.U("Abandonner le plan ?",null,B.e1,null,null,null,null,null,null,null,null)
-B.alO=new A.dX(1,B.cq,B.bVl,null)
+B.alN=new A.dX(1,B.cq,B.bVl,null)
 B.c0y=new A.anW(null)
 B.KS=new A.dX(1,B.cq,B.c0y,null)
 B.rD=new A.N(!0,B.e,null,null,null,null,16,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.bTV=new A.U("Modifier les objectifs",null,B.rD,null,null,null,null,null,null,null,null)
-B.alQ=new A.dX(1,B.cq,B.bTV,null)
+B.alP=new A.dX(1,B.cq,B.bTV,null)
 B.hE=new A.N(!0,B.e,null,null,null,null,20,B.H,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.bRs=new A.U("Content Hub",null,B.hE,null,null,null,null,null,null,null,null)
-B.alS=new A.dX(1,B.cq,B.bRs,null)
+B.alR=new A.dX(1,B.cq,B.bRs,null)
+B.qe=new A.Q(984310,"MaterialIcons",!1)
+B.a8x=new A.OI("1","D\xe9crivez votre situation","Expliquez votre probl\xe8me avec vos propres mots.",null)
+B.alT=new A.dX(1,B.cq,B.a8x,null)
 B.v_=new A.Q(62293,"MaterialIcons",!0)
-B.a8x=new A.OI("3","On l\u2019envoie pour vous","Recommand\xe9 avec accus\xe9 de r\xe9ception, envoy\xe9 par voie postale.",null)
-B.alU=new A.dX(1,B.cq,B.a8x,null)
+B.a8w=new A.OI("3","On l\u2019envoie pour vous","Recommand\xe9 avec accus\xe9 de r\xe9ception, envoy\xe9 par voie postale.",null)
+B.alU=new A.dX(1,B.cq,B.a8w,null)
 B.eK=new A.Q(61358,"MaterialIcons",!1)
 B.a8v=new A.OI("2","On r\xe9dige votre courrier","Notre IA analyse votre situation et g\xe9n\xe8re un courrier sur-mesure.",null)
 B.alY=new A.dX(1,B.cq,B.a8v,null)
@@ -219673,8 +219673,8 @@ B.auB=new A.ah(B.lJ,20,null,null,null)
 B.av=new A.bT(10,null,null,null)
 B.am=new A.Me(2,"ellipsis")
 B.bWE=new A.U("Tout supprimer",null,null,null,null,null,B.am,null,null,null,null)
-B.alR=new A.dX(1,B.cq,B.bWE,null)
-B.bbX=s([B.auB,B.av,B.alR],t.p)
+B.alQ=new A.dX(1,B.cq,B.bWE,null)
+B.bbX=s([B.auB,B.av,B.alQ],t.p)
 B.bES=new A.dp(B.b4,B.f,B.h,B.k,null,B.x,null,0,B.bbX,null)
 B.bzC=new A.iV("clear",B.bES,null,t.wI)
 B.aux=new A.ah(B.ka,18,B.aI,null,null)
@@ -220163,8 +220163,8 @@ B.bqz=s([B.at_,B.aU,B.bVh],t.p)
 B.bEQ=new A.dp(B.b4,B.f,B.P,B.k,null,B.x,null,0,B.bqz,null)
 B.yc=new A.N(!0,null,null,null,null,null,13,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.bSP=new A.U("PDF sauvegard\xe9 dans Downloads/Vikara",null,B.yc,null,null,null,null,null,null,null,null)
-B.alM=new A.dX(1,B.cq,B.bSP,null)
-B.bgg=s([B.qg,B.av,B.alM],t.p)
+B.alL=new A.dX(1,B.cq,B.bSP,null)
+B.bgg=s([B.qg,B.av,B.alL],t.p)
 B.bET=new A.dp(B.b4,B.f,B.h,B.k,null,B.x,null,0,B.bgg,null)
 B.ahw=new A.J(1,0.9294117647058824,0.28627450980392155,0.33725490196078434,B.D)
 B.at5=new A.ah(B.pS,12,B.ahw,null,null)
@@ -220205,8 +220205,8 @@ B.bF2=new A.dp(B.b4,B.f,B.h,B.k,null,B.x,null,0,B.boo,null)
 B.at0=new A.ah(B.qe,18,B.aH,null,null)
 B.bN1=new A.N(!0,B.aH,null,null,null,null,13,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.bWp=new A.U("Personnalisez les informations entre crochets [ ] avec vos donn\xe9es, puis lancez l'analyse.",null,B.bN1,null,null,null,null,null,null,null,null)
-B.alP=new A.dX(1,B.cq,B.bWp,null)
-B.bgE=s([B.at0,B.T,B.alP],t.p)
+B.alO=new A.dX(1,B.cq,B.bWp,null)
+B.bgE=s([B.at0,B.T,B.alO],t.p)
 B.bF3=new A.dp(B.b4,B.f,B.h,B.k,null,B.x,null,0,B.bgE,null)
 B.bUD=new A.U("Facture sauvegard\xe9e dans Downloads/Vikara",null,B.yc,null,null,null,null,null,null,null,null)
 B.alW=new A.dX(1,B.cq,B.bUD,null)
@@ -220218,14 +220218,14 @@ B.bTK=new A.U("5\u2605",null,B.bPZ,null,null,null,null,null,null,null,null)
 B.bp6=s([B.ari,B.bn,B.bTK],t.p)
 B.bF5=new A.dp(B.b4,B.f,B.P,B.k,null,B.x,null,0,B.bp6,null)
 B.bVI=new A.U("Texte copi\xe9 !",null,null,null,null,null,null,null,null,null,null)
-B.alT=new A.dX(1,B.cq,B.bVI,null)
-B.bni=s([B.lL,B.av,B.alT],t.p)
+B.alS=new A.dX(1,B.cq,B.bVI,null)
+B.bni=s([B.lL,B.av,B.alS],t.p)
 B.bF7=new A.dp(B.b4,B.f,B.h,B.k,null,B.x,null,0,B.bni,null)
 B.asQ=new A.ah(B.qe,20,B.aR,null,null)
 B.bNz=new A.N(!0,B.aR,null,null,null,null,13,B.a5,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.bVa=new A.U("Modifiez votre description pour am\xe9liorer l'analyse",null,B.bNz,null,null,null,null,null,null,null,null)
-B.alN=new A.dX(1,B.cq,B.bVa,null)
-B.bld=s([B.asQ,B.av,B.alN],t.p)
+B.alM=new A.dX(1,B.cq,B.bVa,null)
+B.bld=s([B.asQ,B.av,B.alM],t.p)
 B.bF8=new A.dp(B.b4,B.f,B.h,B.k,null,B.x,null,0,B.bld,null)
 B.a6U=new A.U("Dossier supprim\xe9",null,null,null,null,null,null,null,null,null,null)
 B.bmq=s([B.qg,B.av,B.a6U],t.p)
