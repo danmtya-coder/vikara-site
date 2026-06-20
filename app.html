@@ -59,11 +59,14 @@
 
     @keyframes spin { to { transform: rotate(360deg); } }
     @keyframes pulse { 50% { opacity: 0.6; } }
+
+    /* Évite le flash d'un carré noir quand le moteur Flutter prend la main */
+    flutter-view, flt-glass-pane { background: #0d2a28 !important; }
   </style>
 </head>
 <body>
   <div class="loading" id="loading">
-    <img src="icons/Icon-192.png" alt="Vikara">
+    <img src="icons/Icon-loading.png" alt="Vikara">
     <div class="spinner"></div>
   </div>
 
